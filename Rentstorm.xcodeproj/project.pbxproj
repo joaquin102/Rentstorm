@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8902C9DB2059B9850033A722 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902C9DA2059B9850033A722 /* AppDelegate.swift */; };
+		8902C9DD2059B9850033A722 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902C9DC2059B9850033A722 /* ViewController.swift */; };
+		8902C9E02059B9850033A722 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8902C9DE2059B9850033A722 /* Main.storyboard */; };
+		8902C9E22059B9850033A722 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8902C9E12059B9850033A722 /* Assets.xcassets */; };
+		8902C9E52059B9850033A722 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8902C9E32059B9850033A722 /* LaunchScreen.storyboard */; };
+		8902C9F02059B9850033A722 /* RentstormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902C9EF2059B9850033A722 /* RentstormTests.swift */; };
+		8902C9FB2059B9850033A722 /* RentstormUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902C9FA2059B9850033A722 /* RentstormUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8902C9EC2059B9850033A722 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8902C9CF2059B9850033A722 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8902C9D62059B9850033A722;
+			remoteInfo = Rentstorm;
+		};
+		8902C9F72059B9850033A722 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8902C9CF2059B9850033A722 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8902C9D62059B9850033A722;
+			remoteInfo = Rentstorm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8902C9D72059B9850033A722 /* Rentstorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rentstorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8902C9DA2059B9850033A722 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8902C9DC2059B9850033A722 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8902C9DF2059B9850033A722 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8902C9E12059B9850033A722 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8902C9E42059B9850033A722 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8902C9E62059B9850033A722 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8902C9EB2059B9850033A722 /* RentstormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RentstormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8902C9EF2059B9850033A722 /* RentstormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentstormTests.swift; sourceTree = "<group>"; };
+		8902C9F12059B9850033A722 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8902C9F62059B9850033A722 /* RentstormUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RentstormUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8902C9FA2059B9850033A722 /* RentstormUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentstormUITests.swift; sourceTree = "<group>"; };
+		8902C9FC2059B9850033A722 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8902C9D42059B9850033A722 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8902C9E82059B9850033A722 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8902C9F32059B9850033A722 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8902C9CE2059B9850033A722 = {
+			isa = PBXGroup;
+			children = (
+				8902C9D92059B9850033A722 /* Rentstorm */,
+				8902C9EE2059B9850033A722 /* RentstormTests */,
+				8902C9F92059B9850033A722 /* RentstormUITests */,
+				8902C9D82059B9850033A722 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8902C9D82059B9850033A722 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8902C9D72059B9850033A722 /* Rentstorm.app */,
+				8902C9EB2059B9850033A722 /* RentstormTests.xctest */,
+				8902C9F62059B9850033A722 /* RentstormUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8902C9D92059B9850033A722 /* Rentstorm */ = {
+			isa = PBXGroup;
+			children = (
+				8902C9DA2059B9850033A722 /* AppDelegate.swift */,
+				8902C9DC2059B9850033A722 /* ViewController.swift */,
+				8902C9DE2059B9850033A722 /* Main.storyboard */,
+				8902C9E12059B9850033A722 /* Assets.xcassets */,
+				8902C9E32059B9850033A722 /* LaunchScreen.storyboard */,
+				8902C9E62059B9850033A722 /* Info.plist */,
+			);
+			path = Rentstorm;
+			sourceTree = "<group>";
+		};
+		8902C9EE2059B9850033A722 /* RentstormTests */ = {
+			isa = PBXGroup;
+			children = (
+				8902C9EF2059B9850033A722 /* RentstormTests.swift */,
+				8902C9F12059B9850033A722 /* Info.plist */,
+			);
+			path = RentstormTests;
+			sourceTree = "<group>";
+		};
+		8902C9F92059B9850033A722 /* RentstormUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8902C9FA2059B9850033A722 /* RentstormUITests.swift */,
+				8902C9FC2059B9850033A722 /* Info.plist */,
+			);
+			path = RentstormUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8902C9D62059B9850033A722 /* Rentstorm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8902C9FF2059B9850033A722 /* Build configuration list for PBXNativeTarget "Rentstorm" */;
+			buildPhases = (
+				8902C9D32059B9850033A722 /* Sources */,
+				8902C9D42059B9850033A722 /* Frameworks */,
+				8902C9D52059B9850033A722 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rentstorm;
+			productName = Rentstorm;
+			productReference = 8902C9D72059B9850033A722 /* Rentstorm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8902C9EA2059B9850033A722 /* RentstormTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8902CA022059B9850033A722 /* Build configuration list for PBXNativeTarget "RentstormTests" */;
+			buildPhases = (
+				8902C9E72059B9850033A722 /* Sources */,
+				8902C9E82059B9850033A722 /* Frameworks */,
+				8902C9E92059B9850033A722 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8902C9ED2059B9850033A722 /* PBXTargetDependency */,
+			);
+			name = RentstormTests;
+			productName = RentstormTests;
+			productReference = 8902C9EB2059B9850033A722 /* RentstormTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8902C9F52059B9850033A722 /* RentstormUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8902CA052059B9850033A722 /* Build configuration list for PBXNativeTarget "RentstormUITests" */;
+			buildPhases = (
+				8902C9F22059B9850033A722 /* Sources */,
+				8902C9F32059B9850033A722 /* Frameworks */,
+				8902C9F42059B9850033A722 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8902C9F82059B9850033A722 /* PBXTargetDependency */,
+			);
+			name = RentstormUITests;
+			productName = RentstormUITests;
+			productReference = 8902C9F62059B9850033A722 /* RentstormUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8902C9CF2059B9850033A722 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Joaquin Pereira";
+				TargetAttributes = {
+					8902C9D62059B9850033A722 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					8902C9EA2059B9850033A722 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8902C9D62059B9850033A722;
+					};
+					8902C9F52059B9850033A722 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8902C9D62059B9850033A722;
+					};
+				};
+			};
+			buildConfigurationList = 8902C9D22059B9850033A722 /* Build configuration list for PBXProject "Rentstorm" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8902C9CE2059B9850033A722;
+			productRefGroup = 8902C9D82059B9850033A722 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8902C9D62059B9850033A722 /* Rentstorm */,
+				8902C9EA2059B9850033A722 /* RentstormTests */,
+				8902C9F52059B9850033A722 /* RentstormUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8902C9D52059B9850033A722 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8902C9E52059B9850033A722 /* LaunchScreen.storyboard in Resources */,
+				8902C9E22059B9850033A722 /* Assets.xcassets in Resources */,
+				8902C9E02059B9850033A722 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8902C9E92059B9850033A722 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8902C9F42059B9850033A722 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8902C9D32059B9850033A722 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8902C9DD2059B9850033A722 /* ViewController.swift in Sources */,
+				8902C9DB2059B9850033A722 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8902C9E72059B9850033A722 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8902C9F02059B9850033A722 /* RentstormTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8902C9F22059B9850033A722 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8902C9FB2059B9850033A722 /* RentstormUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8902C9ED2059B9850033A722 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8902C9D62059B9850033A722 /* Rentstorm */;
+			targetProxy = 8902C9EC2059B9850033A722 /* PBXContainerItemProxy */;
+		};
+		8902C9F82059B9850033A722 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8902C9D62059B9850033A722 /* Rentstorm */;
+			targetProxy = 8902C9F72059B9850033A722 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8902C9DE2059B9850033A722 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8902C9DF2059B9850033A722 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8902C9E32059B9850033A722 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8902C9E42059B9850033A722 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8902C9FD2059B9850033A722 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8902C9FE2059B9850033A722 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8902CA002059B9850033A722 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Rentstorm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jp.Rentstorm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8902CA012059B9850033A722 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Rentstorm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jp.Rentstorm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8902CA032059B9850033A722 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RentstormTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jp.RentstormTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rentstorm.app/Rentstorm";
+			};
+			name = Debug;
+		};
+		8902CA042059B9850033A722 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RentstormTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jp.RentstormTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rentstorm.app/Rentstorm";
+			};
+			name = Release;
+		};
+		8902CA062059B9850033A722 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RentstormUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jp.RentstormUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rentstorm;
+			};
+			name = Debug;
+		};
+		8902CA072059B9850033A722 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RentstormUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jp.RentstormUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rentstorm;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8902C9D22059B9850033A722 /* Build configuration list for PBXProject "Rentstorm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8902C9FD2059B9850033A722 /* Debug */,
+				8902C9FE2059B9850033A722 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8902C9FF2059B9850033A722 /* Build configuration list for PBXNativeTarget "Rentstorm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8902CA002059B9850033A722 /* Debug */,
+				8902CA012059B9850033A722 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8902CA022059B9850033A722 /* Build configuration list for PBXNativeTarget "RentstormTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8902CA032059B9850033A722 /* Debug */,
+				8902CA042059B9850033A722 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8902CA052059B9850033A722 /* Build configuration list for PBXNativeTarget "RentstormUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8902CA062059B9850033A722 /* Debug */,
+				8902CA072059B9850033A722 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8902C9CF2059B9850033A722 /* Project object */;
+}
