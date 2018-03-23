@@ -7,13 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8411378A1BE4DB1C0AAB6E1F /* Pods_RentstormUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589EDEF826658995C07FD2A6 /* Pods_RentstormUITests.framework */; };
+		86CD749A61C59D5F5CB6A766 /* Pods_Rentstorm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932A03A4F726FD1A496AF3E3 /* Pods_Rentstorm.framework */; };
 		8902C9DB2059B9850033A722 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902C9DA2059B9850033A722 /* AppDelegate.swift */; };
-		8902C9DD2059B9850033A722 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902C9DC2059B9850033A722 /* ViewController.swift */; };
 		8902C9E02059B9850033A722 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8902C9DE2059B9850033A722 /* Main.storyboard */; };
 		8902C9E22059B9850033A722 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8902C9E12059B9850033A722 /* Assets.xcassets */; };
 		8902C9E52059B9850033A722 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8902C9E32059B9850033A722 /* LaunchScreen.storyboard */; };
 		8902C9F02059B9850033A722 /* RentstormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902C9EF2059B9850033A722 /* RentstormTests.swift */; };
 		8902C9FB2059B9850033A722 /* RentstormUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902C9FA2059B9850033A722 /* RentstormUITests.swift */; };
+		8902CA0C2059BEAD0033A722 /* Car.png in Resources */ = {isa = PBXBuildFile; fileRef = 8902CA0B2059BEAC0033A722 /* Car.png */; };
+		8902CA0F2059C54E0033A722 /* RatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902CA0E2059C54E0033A722 /* RatesViewController.swift */; };
+		8902CA122059C6B20033A722 /* ServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902CA112059C6B20033A722 /* ServerModel.swift */; };
+		8902CA162059CD060033A722 /* Rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902CA152059CD060033A722 /* Rate.swift */; };
+		8902CA1B2059E5E40033A722 /* RateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902CA1A2059E5E40033A722 /* RateTableViewCell.swift */; };
+		8902CA1D205A442E0033A722 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902CA1C205A442E0033A722 /* LocationModel.swift */; };
+		8902CA20205A56700033A722 /* TableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8902CA1F205A56700033A722 /* TableViewHeader.xib */; };
+		8902CA22205A56820033A722 /* TableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902CA21205A56820033A722 /* TableViewHeader.swift */; };
+		8902CA26205A5A850033A722 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902CA25205A5A850033A722 /* SearchViewController.swift */; };
+		8902CA29205A5C510033A722 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902CA28205A5C510033A722 /* SearchTableViewCell.swift */; };
+		896273A8205F7774004032DD /* Los Angeles, California.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 896273A7205F7774004032DD /* Los Angeles, California.gpx */; };
+		896273AB205F9AC8004032DD /* DirectionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896273AA205F9AC8004032DD /* DirectionsTableViewController.swift */; };
+		896273AE205F9C70004032DD /* DirectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896273AD205F9C70004032DD /* DirectionTableViewCell.swift */; };
+		896273B2205FB201004032DD /* LocalRent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896273B1205FB201004032DD /* LocalRent.swift */; };
+		89B736DA205B7781004443A9 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B736D9205B7781004443A9 /* Place.swift */; };
+		89D1A900205CEAC8009A9545 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1A8FF205CEAC8009A9545 /* ButtonTableViewCell.swift */; };
+		89D1A902205D0740009A9545 /* DateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1A901205D0740009A9545 /* DateTableViewCell.swift */; };
+		89D1A905205DBBA2009A9545 /* SortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1A904205DBBA2009A9545 /* SortViewController.swift */; };
+		89D1A909205F0852009A9545 /* DatesPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1A908205F0852009A9545 /* DatesPickerViewController.swift */; };
+		89D1A90D205F0EEB009A9545 /* RatePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1A90C205F0EEB009A9545 /* RatePreviewViewController.swift */; };
+		89D1A910205F3EE7009A9545 /* DatesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1A90F205F3EE7009A9545 /* DatesModel.swift */; };
+		89D1A916205F4402009A9545 /* PopUpConfirmation.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89D1A914205F4401009A9545 /* PopUpConfirmation.xib */; };
+		89D1A918205F44E6009A9545 /* PopUpConfirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1A917205F44E6009A9545 /* PopUpConfirmation.swift */; };
+		89D1A921205F6008009A9545 /* check.gif in Resources */ = {isa = PBXBuildFile; fileRef = 89D1A920205F6007009A9545 /* check.gif */; };
+		89D1A924205F6CD5009A9545 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1A923205F6CD5009A9545 /* MapViewController.swift */; };
+		C1E17F4A9676348B8767AAD1 /* Pods_RentstormTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97CE3C766FD7481BDA46CC4 /* Pods_RentstormTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +61,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		589EDEF826658995C07FD2A6 /* Pods_RentstormUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RentstormUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F8B5F234DF24C45E6D655D0 /* Pods-Rentstorm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rentstorm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rentstorm/Pods-Rentstorm.debug.xcconfig"; sourceTree = "<group>"; };
+		7E450535A8E9DB47E1E83B00 /* Pods-RentstormUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RentstormUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RentstormUITests/Pods-RentstormUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8902C9D72059B9850033A722 /* Rentstorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rentstorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8902C9DA2059B9850033A722 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8902C9DC2059B9850033A722 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8902C9DF2059B9850033A722 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8902C9E12059B9850033A722 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8902C9E42059B9850033A722 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +76,37 @@
 		8902C9F62059B9850033A722 /* RentstormUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RentstormUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8902C9FA2059B9850033A722 /* RentstormUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentstormUITests.swift; sourceTree = "<group>"; };
 		8902C9FC2059B9850033A722 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8902CA0B2059BEAC0033A722 /* Car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Car.png; sourceTree = "<group>"; };
+		8902CA0E2059C54E0033A722 /* RatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesViewController.swift; sourceTree = "<group>"; };
+		8902CA112059C6B20033A722 /* ServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerModel.swift; sourceTree = "<group>"; };
+		8902CA152059CD060033A722 /* Rate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rate.swift; sourceTree = "<group>"; };
+		8902CA1A2059E5E40033A722 /* RateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateTableViewCell.swift; sourceTree = "<group>"; };
+		8902CA1C205A442E0033A722 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		8902CA1F205A56700033A722 /* TableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewHeader.xib; sourceTree = "<group>"; };
+		8902CA21205A56820033A722 /* TableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHeader.swift; sourceTree = "<group>"; };
+		8902CA25205A5A850033A722 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		8902CA28205A5C510033A722 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		896273A7205F7774004032DD /* Los Angeles, California.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Los Angeles, California.gpx"; sourceTree = "<group>"; };
+		896273AA205F9AC8004032DD /* DirectionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsTableViewController.swift; sourceTree = "<group>"; };
+		896273AD205F9C70004032DD /* DirectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionTableViewCell.swift; sourceTree = "<group>"; };
+		896273B1205FB201004032DD /* LocalRent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRent.swift; sourceTree = "<group>"; };
+		89B736D9205B7781004443A9 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		89D1A8FF205CEAC8009A9545 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
+		89D1A901205D0740009A9545 /* DateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTableViewCell.swift; sourceTree = "<group>"; };
+		89D1A904205DBBA2009A9545 /* SortViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortViewController.swift; sourceTree = "<group>"; };
+		89D1A908205F0852009A9545 /* DatesPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatesPickerViewController.swift; sourceTree = "<group>"; };
+		89D1A90C205F0EEB009A9545 /* RatePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatePreviewViewController.swift; sourceTree = "<group>"; };
+		89D1A90F205F3EE7009A9545 /* DatesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatesModel.swift; sourceTree = "<group>"; };
+		89D1A914205F4401009A9545 /* PopUpConfirmation.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopUpConfirmation.xib; sourceTree = "<group>"; };
+		89D1A917205F44E6009A9545 /* PopUpConfirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpConfirmation.swift; sourceTree = "<group>"; };
+		89D1A920205F6007009A9545 /* check.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = check.gif; sourceTree = "<group>"; };
+		89D1A923205F6CD5009A9545 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		92CAED774704ED6144308F7E /* Pods-Rentstorm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rentstorm.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rentstorm/Pods-Rentstorm.release.xcconfig"; sourceTree = "<group>"; };
+		932A03A4F726FD1A496AF3E3 /* Pods_Rentstorm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rentstorm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD981D1F966F7A2C89ADAA8C /* Pods-RentstormTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RentstormTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RentstormTests/Pods-RentstormTests.release.xcconfig"; sourceTree = "<group>"; };
+		E97CE3C766FD7481BDA46CC4 /* Pods_RentstormTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RentstormTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9FC154E4EF8BFBF6E302445 /* Pods-RentstormTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RentstormTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RentstormTests/Pods-RentstormTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F6B3B3E956E23E8F07F90263 /* Pods-RentstormUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RentstormUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RentstormUITests/Pods-RentstormUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86CD749A61C59D5F5CB6A766 /* Pods_Rentstorm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1E17F4A9676348B8767AAD1 /* Pods_RentstormTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +130,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8411378A1BE4DB1C0AAB6E1F /* Pods_RentstormUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		168A47D2A7D7936E86C3843B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F8B5F234DF24C45E6D655D0 /* Pods-Rentstorm.debug.xcconfig */,
+				92CAED774704ED6144308F7E /* Pods-Rentstorm.release.xcconfig */,
+				E9FC154E4EF8BFBF6E302445 /* Pods-RentstormTests.debug.xcconfig */,
+				BD981D1F966F7A2C89ADAA8C /* Pods-RentstormTests.release.xcconfig */,
+				7E450535A8E9DB47E1E83B00 /* Pods-RentstormUITests.debug.xcconfig */,
+				F6B3B3E956E23E8F07F90263 /* Pods-RentstormUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8902C9CE2059B9850033A722 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +157,8 @@
 				8902C9EE2059B9850033A722 /* RentstormTests */,
 				8902C9F92059B9850033A722 /* RentstormUITests */,
 				8902C9D82059B9850033A722 /* Products */,
+				168A47D2A7D7936E86C3843B /* Pods */,
+				B8CDE38D745DA8AD75BD34A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,10 +175,20 @@
 		8902C9D92059B9850033A722 /* Rentstorm */ = {
 			isa = PBXGroup;
 			children = (
+				896273B0205FB1E2004032DD /* Local */,
+				896273A7205F7774004032DD /* Los Angeles, California.gpx */,
+				89D1A922205F6CC7009A9545 /* Map */,
+				89D1A912205F43EF009A9545 /* CustomViews */,
+				89D1A907205F0835009A9545 /* Dates */,
+				8902CA132059CCF80033A722 /* Classes */,
+				8902CA102059C69A0033A722 /* Model */,
+				8902CA0D2059C5230033A722 /* Rates */,
+				8902CA24205A5A710033A722 /* Search */,
+				89D1A903205DBB90009A9545 /* Sort */,
 				8902C9DA2059B9850033A722 /* AppDelegate.swift */,
-				8902C9DC2059B9850033A722 /* ViewController.swift */,
 				8902C9DE2059B9850033A722 /* Main.storyboard */,
 				8902C9E12059B9850033A722 /* Assets.xcassets */,
+				8902CA082059BE0B0033A722 /* Resources */,
 				8902C9E32059B9850033A722 /* LaunchScreen.storyboard */,
 				8902C9E62059B9850033A722 /* Info.plist */,
 			);
@@ -125,6 +213,190 @@
 			path = RentstormUITests;
 			sourceTree = "<group>";
 		};
+		8902CA082059BE0B0033A722 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				89D1A920205F6007009A9545 /* check.gif */,
+				8902CA0B2059BEAC0033A722 /* Car.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8902CA0D2059C5230033A722 /* Rates */ = {
+			isa = PBXGroup;
+			children = (
+				89D1A90B205F0EDC009A9545 /* Preview */,
+				89D1A90A205F0EC9009A9545 /* RatesList */,
+				8902CA0E2059C54E0033A722 /* RatesViewController.swift */,
+			);
+			path = Rates;
+			sourceTree = "<group>";
+		};
+		8902CA102059C69A0033A722 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8902CA112059C6B20033A722 /* ServerModel.swift */,
+				8902CA1C205A442E0033A722 /* LocationModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8902CA132059CCF80033A722 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				89B736D6205B6F49004443A9 /* Address */,
+				8902CA142059CCFC0033A722 /* Rate */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8902CA142059CCFC0033A722 /* Rate */ = {
+			isa = PBXGroup;
+			children = (
+				8902CA152059CD060033A722 /* Rate.swift */,
+			);
+			path = Rate;
+			sourceTree = "<group>";
+		};
+		8902CA172059E58B0033A722 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8902CA1A2059E5E40033A722 /* RateTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8902CA1E205A56330033A722 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				8902CA1F205A56700033A722 /* TableViewHeader.xib */,
+				8902CA21205A56820033A722 /* TableViewHeader.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		8902CA24205A5A710033A722 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				8902CA27205A5C330033A722 /* Cells */,
+				8902CA25205A5A850033A722 /* SearchViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		8902CA27205A5C330033A722 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8902CA28205A5C510033A722 /* SearchTableViewCell.swift */,
+				89D1A8FF205CEAC8009A9545 /* ButtonTableViewCell.swift */,
+				89D1A901205D0740009A9545 /* DateTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		896273A9205F9AB2004032DD /* Directions */ = {
+			isa = PBXGroup;
+			children = (
+				896273AC205F9C5D004032DD /* Cell */,
+				896273AA205F9AC8004032DD /* DirectionsTableViewController.swift */,
+			);
+			path = Directions;
+			sourceTree = "<group>";
+		};
+		896273AC205F9C5D004032DD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				896273AD205F9C70004032DD /* DirectionTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		896273B0205FB1E2004032DD /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				896273B1205FB201004032DD /* LocalRent.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		89B736D6205B6F49004443A9 /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				89B736D9205B7781004443A9 /* Place.swift */,
+			);
+			path = Address;
+			sourceTree = "<group>";
+		};
+		89D1A903205DBB90009A9545 /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				89D1A904205DBBA2009A9545 /* SortViewController.swift */,
+			);
+			path = Sort;
+			sourceTree = "<group>";
+		};
+		89D1A907205F0835009A9545 /* Dates */ = {
+			isa = PBXGroup;
+			children = (
+				89D1A90E205F3ED9009A9545 /* Model */,
+				89D1A908205F0852009A9545 /* DatesPickerViewController.swift */,
+			);
+			path = Dates;
+			sourceTree = "<group>";
+		};
+		89D1A90A205F0EC9009A9545 /* RatesList */ = {
+			isa = PBXGroup;
+			children = (
+				8902CA1E205A56330033A722 /* Header */,
+				8902CA172059E58B0033A722 /* Cells */,
+			);
+			path = RatesList;
+			sourceTree = "<group>";
+		};
+		89D1A90B205F0EDC009A9545 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				89D1A90C205F0EEB009A9545 /* RatePreviewViewController.swift */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		89D1A90E205F3ED9009A9545 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				89D1A90F205F3EE7009A9545 /* DatesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		89D1A912205F43EF009A9545 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				89D1A914205F4401009A9545 /* PopUpConfirmation.xib */,
+				89D1A917205F44E6009A9545 /* PopUpConfirmation.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		89D1A922205F6CC7009A9545 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				896273A9205F9AB2004032DD /* Directions */,
+				89D1A923205F6CD5009A9545 /* MapViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		B8CDE38D745DA8AD75BD34A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				932A03A4F726FD1A496AF3E3 /* Pods_Rentstorm.framework */,
+				E97CE3C766FD7481BDA46CC4 /* Pods_RentstormTests.framework */,
+				589EDEF826658995C07FD2A6 /* Pods_RentstormUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +404,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8902C9FF2059B9850033A722 /* Build configuration list for PBXNativeTarget "Rentstorm" */;
 			buildPhases = (
+				3F4CA97CCA36E3EE82CA8E96 /* [CP] Check Pods Manifest.lock */,
 				8902C9D32059B9850033A722 /* Sources */,
 				8902C9D42059B9850033A722 /* Frameworks */,
 				8902C9D52059B9850033A722 /* Resources */,
+				33E282384BE81D4C6232E268 /* [CP] Embed Pods Frameworks */,
+				D9606C4F5CBFE57FA06BF0DA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +424,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8902CA022059B9850033A722 /* Build configuration list for PBXNativeTarget "RentstormTests" */;
 			buildPhases = (
+				11183EB63C58136A586E009C /* [CP] Check Pods Manifest.lock */,
 				8902C9E72059B9850033A722 /* Sources */,
 				8902C9E82059B9850033A722 /* Frameworks */,
 				8902C9E92059B9850033A722 /* Resources */,
+				5555A4EEF1123889D1BB9370 /* [CP] Embed Pods Frameworks */,
+				61C9940B92BAD1314B2FC515 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +445,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8902CA052059B9850033A722 /* Build configuration list for PBXNativeTarget "RentstormUITests" */;
 			buildPhases = (
+				836ABC60CE145927B02E2742 /* [CP] Check Pods Manifest.lock */,
 				8902C9F22059B9850033A722 /* Sources */,
 				8902C9F32059B9850033A722 /* Frameworks */,
 				8902C9F42059B9850033A722 /* Resources */,
+				78DFDC25492B966A7D05B9F2 /* [CP] Embed Pods Frameworks */,
+				7430D51EC4CC93EDF2E7C384 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,8 +513,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8902CA0C2059BEAD0033A722 /* Car.png in Resources */,
+				896273A8205F7774004032DD /* Los Angeles, California.gpx in Resources */,
 				8902C9E52059B9850033A722 /* LaunchScreen.storyboard in Resources */,
+				8902CA20205A56700033A722 /* TableViewHeader.xib in Resources */,
+				89D1A921205F6008009A9545 /* check.gif in Resources */,
 				8902C9E22059B9850033A722 /* Assets.xcassets in Resources */,
+				89D1A916205F4402009A9545 /* PopUpConfirmation.xib in Resources */,
 				8902C9E02059B9850033A722 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,13 +540,194 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		11183EB63C58136A586E009C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RentstormTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33E282384BE81D4C6232E268 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Rentstorm/Pods-Rentstorm-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+				"${BUILT_PRODUCTS_DIR}/KGHitTestingViews/KGHitTestingViews.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KGHitTestingViews.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rentstorm/Pods-Rentstorm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F4CA97CCA36E3EE82CA8E96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rentstorm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5555A4EEF1123889D1BB9370 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RentstormTests/Pods-RentstormTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61C9940B92BAD1314B2FC515 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RentstormTests/Pods-RentstormTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7430D51EC4CC93EDF2E7C384 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RentstormUITests/Pods-RentstormUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78DFDC25492B966A7D05B9F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RentstormUITests/Pods-RentstormUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		836ABC60CE145927B02E2742 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RentstormUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9606C4F5CBFE57FA06BF0DA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rentstorm/Pods-Rentstorm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8902C9D32059B9850033A722 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8902C9DD2059B9850033A722 /* ViewController.swift in Sources */,
+				8902CA29205A5C510033A722 /* SearchTableViewCell.swift in Sources */,
+				89D1A900205CEAC8009A9545 /* ButtonTableViewCell.swift in Sources */,
+				8902CA122059C6B20033A722 /* ServerModel.swift in Sources */,
+				89D1A902205D0740009A9545 /* DateTableViewCell.swift in Sources */,
+				8902CA0F2059C54E0033A722 /* RatesViewController.swift in Sources */,
+				89D1A90D205F0EEB009A9545 /* RatePreviewViewController.swift in Sources */,
+				8902CA26205A5A850033A722 /* SearchViewController.swift in Sources */,
+				896273AE205F9C70004032DD /* DirectionTableViewCell.swift in Sources */,
+				8902CA162059CD060033A722 /* Rate.swift in Sources */,
+				896273AB205F9AC8004032DD /* DirectionsTableViewController.swift in Sources */,
+				8902CA1B2059E5E40033A722 /* RateTableViewCell.swift in Sources */,
+				8902CA1D205A442E0033A722 /* LocationModel.swift in Sources */,
 				8902C9DB2059B9850033A722 /* AppDelegate.swift in Sources */,
+				89D1A909205F0852009A9545 /* DatesPickerViewController.swift in Sources */,
+				89D1A905205DBBA2009A9545 /* SortViewController.swift in Sources */,
+				89D1A924205F6CD5009A9545 /* MapViewController.swift in Sources */,
+				89D1A910205F3EE7009A9545 /* DatesModel.swift in Sources */,
+				8902CA22205A56820033A722 /* TableViewHeader.swift in Sources */,
+				89D1A918205F44E6009A9545 /* PopUpConfirmation.swift in Sources */,
+				896273B2205FB201004032DD /* LocalRent.swift in Sources */,
+				89B736DA205B7781004443A9 /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +891,7 @@
 		};
 		8902CA002059B9850033A722 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F8B5F234DF24C45E6D655D0 /* Pods-Rentstorm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -432,12 +900,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jp.Rentstorm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		8902CA012059B9850033A722 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92CAED774704ED6144308F7E /* Pods-Rentstorm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,12 +915,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jp.Rentstorm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		8902CA032059B9850033A722 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9FC154E4EF8BFBF6E302445 /* Pods-RentstormTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -468,6 +938,7 @@
 		};
 		8902CA042059B9850033A722 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD981D1F966F7A2C89ADAA8C /* Pods-RentstormTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +955,7 @@
 		};
 		8902CA062059B9850033A722 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E450535A8E9DB47E1E83B00 /* Pods-RentstormUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +971,7 @@
 		};
 		8902CA072059B9850033A722 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6B3B3E956E23E8F07F90263 /* Pods-RentstormUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
