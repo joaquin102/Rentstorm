@@ -31,19 +31,21 @@ enum CarCategory:String {
     case Other = "Other"
 }
 
-enum RateType {
+enum RateType:String {
     
-    case Daily
-    case Monthly
-    case Yearly
-    case Other
+    case Daily = "Daily"
+    case Weekly = "Weekly"
+    case Weekend = "Weekend"
+    case Monthly = "Monthly"
+    case Yearly = "Yearly"
+    case Other = "Other"
 }
 
 enum Transmission:String {
     
-    case Manual = "M"
-    case Automatic = "A"
-    case Other = "O"
+    case Manual = "Manual"
+    case Automatic = "Automatic"
+    case Other = "Other"
 }
 
 import UIKit
@@ -105,7 +107,7 @@ class Rate: NSObject {
         self.total = Double(self.totalString!);
         
         //
-        self.suggestedName = suggestedVehicleName(category: category);
+        self.suggestedName = Rate.suggestedVehicleName(category: category);
         
         //Dates
         
@@ -118,7 +120,7 @@ class Rate: NSObject {
     
     //MARK: - Helpers -
     
-    func suggestedVehicleName(category:CarCategory) -> String{
+    class func suggestedVehicleName(category:CarCategory) -> String{
         
         if category.rawValue == "Mini" {
             
@@ -266,7 +268,7 @@ class Rate: NSObject {
             
             return .PassengerVan;
         }
-
+        
         return CarType.Other;
     }
     
@@ -322,14 +324,24 @@ class Rate: NSObject {
             return .Daily;
         }
         
+        if rateName == "WEEKLY" {
+            
+            return .Weekly;
+        }
+        
+        if rateName == "WEEKEND" {
+            
+            return .Weekend;
+        }
+        
         if rateName == "MONTHLY" {
             
-            return .Daily;
+            return .Monthly;
         }
         
         if rateName == "YEARLY" {
             
-            return .Daily;
+            return .Yearly;
         }
         
         return RateType.Other;
@@ -347,8 +359,8 @@ class Rate: NSObject {
             return .Manual;
         }
         
-
-        return Transmission.Other;
+        
+        return .Other;
     }
     
     

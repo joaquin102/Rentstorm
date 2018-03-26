@@ -176,10 +176,10 @@ class ServerModel: NSObject {
                 for carRateInfo in cars {
                     
                     let ratesList = carRateInfo["rates"].array;
-                    let dailyRateInfo = ratesList?.first?.dictionary; //DAILY
+                    let rateInfo = ratesList?.first?.dictionary;
                     
-                    let rateType = Rate.rateType(rateName: (dailyRateInfo!["type"]?.string)!);
-                    let priceInfo = dailyRateInfo!["price"]?.dictionary;
+                    let rateType = Rate.rateType(rateName: (rateInfo!["type"]?.string)!);
+                    let priceInfo = rateInfo!["price"]?.dictionary;
                     let rateCurrency = priceInfo!["currency"]?.string;
                     let ratePrice = priceInfo!["amount"]?.string;
 

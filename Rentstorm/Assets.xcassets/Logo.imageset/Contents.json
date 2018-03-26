@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "RENTSTORM@1x.png",
+      "filename" : "Rentstorm@1x.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "RENTSTORM@2x.png",
+      "filename" : "Rentstorm@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "RENTSTORM@3x.png",
+      "filename" : "Rentstorm@3x.png",
       "scale" : "3x"
     }
   ],

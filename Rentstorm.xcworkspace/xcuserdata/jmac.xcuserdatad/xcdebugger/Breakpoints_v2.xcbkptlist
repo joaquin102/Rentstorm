@@ -21,5 +21,53 @@
             stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Rentstorm/Model/ServerModel.swift"
+            timestampString = "543490171.553951"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "187"
+            endingLineNumber = "187"
+            landmarkName = "createRateObjects(serverData:currentLocation:startDate:endDate:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Rentstorm.ServerModel.createRateObjects(serverData: Swift.Array&lt;SwiftyJSON.JSON&gt;, currentLocation: __ObjC.CLLocation, startDate: Foundation.Date, endDate: Foundation.Date) -&gt; Swift.Array&lt;Rentstorm.Rate&gt;"
+                  moduleName = "Rentstorm"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jmac/Dropbox/Rentstorm/Rentstorm/Model/ServerModel.swift"
+                  timestampString = "543488490.458021"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "187"
+                  endingLineNumber = "187"
+                  offsetFromSymbolStart = "15506">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Rentstorm.ServerModel.createRateObjects(serverData: Swift.Array&lt;SwiftyJSON.JSON&gt;, currentLocation: __ObjC.CLLocation, startDate: Foundation.Date, endDate: Foundation.Date) -&gt; Swift.Array&lt;Rentstorm.Rate&gt;"
+                  moduleName = "Rentstorm"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jmac/Dropbox/Rentstorm/Rentstorm/Model/ServerModel.swift"
+                  timestampString = "543488490.463437"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "187"
+                  endingLineNumber = "187"
+                  offsetFromSymbolStart = "28945">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

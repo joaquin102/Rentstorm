@@ -156,7 +156,7 @@ class RatePreviewViewController: UIViewController, UITableViewDelegate, UITableV
             }
         }
         
-        return 0.0
+        return 50.0
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -202,9 +202,6 @@ class RatePreviewViewController: UIViewController, UITableViewDelegate, UITableV
                 //Open map
                 self.performSegue(withIdentifier: "mapVC", sender: self)
             })
-            
-            //Days
-            cell.lbl_rateType.text = "Total"
             
             //Return
             return cell;

@@ -12,7 +12,6 @@ import MapKit
 
 protocol SearchViewControllerDelegate: class {
     
-    func searchViewControllerDidSelectNearbyRentals();
     func searchViewControllerDidSelectLocation(place:Place, startDate:Date, endDate:Date);
 }
 

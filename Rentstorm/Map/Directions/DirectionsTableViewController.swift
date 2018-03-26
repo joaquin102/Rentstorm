@@ -38,6 +38,7 @@ class DirectionsTableViewController: UITableViewController {
         //barButtonItem
         
         let barButtonItem = UIBarButtonItem(title: "Open Maps", style: .done, target: self, action: #selector(self.openMaps))
+        barButtonItem.tintColor = UIColor.white;
         self.navigationItem.rightBarButtonItem = barButtonItem;
         
         self.customPopViewController();

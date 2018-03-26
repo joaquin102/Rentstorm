@@ -10,7 +10,7 @@ import UIKit
 import CoreLocation
 import NVActivityIndicatorView
 
-class RatesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate, SearchViewControllerDelegate, SortViewControllerDelegate, DatesPickerViewControllerDelegate, RatePreviewViewControllerDelegate {
+class RatesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate, SearchViewControllerDelegate, SortViewControllerDelegate, DatesPickerViewControllerDelegate, RatePreviewViewControllerDelegate, FilterViewControllerDelegate {
     
     var INCOMING_RESERVATIONS_SECTION = 0;
     var RATES_SECTION = 1;
@@ -18,6 +18,7 @@ class RatesViewController: UIViewController, UITableViewDelegate, UITableViewDat
     //PROPERTIES
     var dataSource:[Rate] = [];
     var nearbyRates:[Rate] = [];
+    var ratesBackup = [Rate]() //Copy non filtered
     
     var rateSelected:Rate?
     var placeSelected:Place? //Place or area where the customer wants to see rates
@@ -25,6 +26,15 @@ class RatesViewController: UIViewController, UITableViewDelegate, UITableViewDat
     var endDate = Date().dayAfterTomorrow //Default
     
     var sort:SortTypes = .distance //Default
+    
+    
+    //Filters
+    var rateTypes = [String]();
+    var sizes = [String]();
+    var transmitions = [String]();
+    
+    var filterApplied = Filter();
+    
     
 
     //OUTLETS
@@ -127,13 +137,19 @@ class RatesViewController: UIViewController, UITableViewDelegate, UITableViewDat
                     //Sort by default (Distance)
                     self.dataSource = self.sortedRates(rates: rates)
                     
-                    self.nearbyRates = self.sortedRates(rates: rates) //Keep a copy
+                    self.nearbyRates = self.sortedRates(rates: rates)
+                    
+                    self.ratesBackup.removeAll();
+                    self.ratesBackup.append(contentsOf: self.nearbyRates); //Keep a backup
                     
                     //Update TableView
                     self.tableView.reloadSections(IndexSet.init(integer: self.RATES_SECTION), with: UITableViewRowAnimation.fade)
                     
                     //Stop animating
                     self.viewActivityIndicator.stopAnimating();
+                    
+                    //Prepare filters
+                    self.createFilters();
                 
                 }else{
                     
@@ -175,6 +191,13 @@ class RatesViewController: UIViewController, UITableViewDelegate, UITableViewDat
             self.tableView.reloadSections(IndexSet.init(integer: self.RATES_SECTION), with: UITableViewRowAnimation.fade)
             
             self.viewActivityIndicator.stopAnimating();
+            
+            //Backup
+            self.ratesBackup.removeAll();
+            self.ratesBackup.append(contentsOf: rates);
+            
+            //Prepare filters
+            self.createFilters();
         }
     }
     
@@ -294,10 +317,6 @@ class RatesViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     //MARK: - SEARCH DELEGATES -
 
-    func searchViewControllerDidSelectNearbyRentals() {
-         
-    }
-    
     func searchViewControllerDidSelectLocation(place: Place, startDate: Date, endDate: Date) {
         
         //Update pointers
@@ -305,13 +324,14 @@ class RatesViewController: UIViewController, UITableViewDelegate, UITableViewDat
         self.startDate = startDate;
         self.endDate = endDate
         
+        //Remove any filters
+        removeFilters()
+        
         //Get rates
         rates(place: place, startDate: startDate, endDate: endDate);
         
-        
         //Update searchBar
         updateSearchBar();
-        
     }
     
     //MARK: - SORT DELEGATE -
@@ -323,6 +343,9 @@ class RatesViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         //Sort dataSource
         self.dataSource = sortedRates(rates: self.dataSource)
+        
+        //Sort copy
+        self.ratesBackup = sortedRates(rates: self.ratesBackup);
         
         //Reload TableView
         self.tableView.reloadData();
@@ -402,7 +425,72 @@ class RatesViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
     }
     
+    //MARK: - FILTERS -
+
+    func createFilters() {
+        
+        //Clear all
+        rateTypes.removeAll();
+        sizes.removeAll();
+        transmitions.removeAll();
+        
+        //Fill them up
+        for rate in dataSource {
+            
+            //Rates
+            rateTypes.append((rate.rateType?.rawValue)!);
+            
+            //Sizes
+            sizes.append((rate.category?.rawValue)!);
+            
+            //Transmition
+            transmitions.append(rate.transmission.rawValue);
+            
+            //Remove duplicates
+            rateTypes = rateTypes.removingDuplicates();
+            sizes = sizes.removingDuplicates();
+            transmitions = transmitions.removingDuplicates();
+        }
+    }
     
+    func removeFilters() {
+        
+        self.filterApplied.removeFilters()
+        
+        updateFiltersButton();
+    }
+    
+    func filterViewControllerDidFiler(filteredArray: [Rate], filterApplied: Filter) {
+        
+        //Save filter applied
+        self.filterApplied = filterApplied;
+        
+        //Rates filtered
+        self.dataSource = filteredArray;
+        
+        //Update
+        self.tableView.reloadData()
+        
+        //Button
+        updateFiltersButton()
+        
+    }
+    
+    func filterViewControllerDidRemoveFilters() {
+        
+        //Filter
+        removeFilters();
+        
+        //DataSource
+        self.dataSource.removeAll();
+        self.dataSource.append(contentsOf: ratesBackup);
+        
+        //Reload
+        self.tableView.reloadData();
+        
+        //Button
+        updateFiltersButton()
+    }
     
     //MARK: - GESTURES -
     
@@ -472,6 +560,24 @@ class RatesViewController: UIViewController, UITableViewDelegate, UITableViewDat
         viewSortContainer.backgroundColor = #colorLiteral(red: 0.8818888068, green: 0.3359293342, blue: 0.2336356044, alpha: 1)
     }
     
+    func updateFiltersButton() {
+        
+        if filterApplied.numberOfFiltersApplied() > 0 {
+            
+            lbl_filters.text = "Filters · " + String(filterApplied.numberOfFiltersApplied())
+            lbl_filters.textColor = UIColor.white;
+            viewFiltersContainer.backgroundColor = #colorLiteral(red: 0.8818888068, green: 0.3359293342, blue: 0.2336356044, alpha: 1)
+            
+        }else{
+            
+            lbl_filters.text = "Filters"
+            lbl_filters.textColor = UIColor.black;
+            viewFiltersContainer.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        }
+        
+        
+    }
+    
     func updateDatesButton() {
         
         //Dates
@@ -502,13 +608,23 @@ class RatesViewController: UIViewController, UITableViewDelegate, UITableViewDat
         endDate = Date();
         sort = .distance;
         
+        removeFilters();
+        
         //Update searchBar
         updateSearchBar();
         updateDatesButton()
         updateSortButton()
+        updateFiltersButton()
+        
+        //Sort
+        nearbyRates = sortedRates(rates: nearbyRates);
         
         //Show nearby results
+        ratesBackup.removeAll();
+        ratesBackup.append(contentsOf: self.nearbyRates); //Keep a backup
+        
         dataSource = nearbyRates;
+        
         self.tableView.reloadSections([INCOMING_RESERVATIONS_SECTION, RATES_SECTION], with: .top);
 
     }
@@ -542,6 +658,21 @@ class RatesViewController: UIViewController, UITableViewDelegate, UITableViewDat
             sortVC.sort = self.sort;
         }
         
+        if segue.identifier == "filterVC" {
+            
+            let cNav = segue.destination as! UINavigationController;
+            
+            let filtersVC = cNav.viewControllers.first as! FilterViewController;
+            filtersVC.delegate = self;
+            
+            filtersVC.filter = self.filterApplied;
+            
+            filtersVC.rates = self.ratesBackup;
+            filtersVC.rateTypes = self.rateTypes;
+            filtersVC.sizes = self.sizes;
+            filtersVC.transmission = self.transmitions;
+        }
+        
         if segue.identifier == "ratePreviewVC" {
             
             let previewVC = segue.destination as! RatePreviewViewController;
@@ -568,4 +699,13 @@ extension Date {
 
 }
 
+extension Array where Element: Equatable {
+    func removingDuplicates() -> Array {
+        return reduce(into: []) { result, element in
+            if !result.contains(element) {
+                result.append(element)
+            }
+        }
+    }
+}
 

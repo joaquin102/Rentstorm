@@ -15,6 +15,7 @@ class RateTableViewCell: UITableViewCell {
     @IBOutlet weak var lbl_carName: UILabel!
     @IBOutlet weak var lbl_price: UILabel!
     @IBOutlet weak var lbl_rateType: UILabel!
+    @IBOutlet weak var lbl_ratePrice: UILabel!
     
     @IBOutlet weak var img_company: UIImageView!
     @IBOutlet weak var img_car: UIImageView!
@@ -75,6 +76,8 @@ class RateTableViewCell: UITableViewCell {
         lbl_carName.text = rate.suggestedName;
         
         //Rate Price
+        lbl_rateType.text = rate.rateType?.rawValue
+        lbl_ratePrice.text = "\(rate.currency!)\(rate.ratePrice!)";
         lbl_price.text = "\(rate.currency!)\(rate.totalString!)";
         
         //Image
@@ -83,7 +86,7 @@ class RateTableViewCell: UITableViewCell {
         //Features
         lbl_people.text = String(describing: rate.people!);
         lbl_luggage.text = String(describing: rate.luggage!);
-        lbl_trans.text = String(describing: rate.transmission.rawValue);
+        lbl_trans.text = String(rate.transmission.rawValue[rate.transmission.rawValue.index(at: 0)!]);
         
         if rate.ac! {
             
